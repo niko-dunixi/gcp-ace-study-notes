@@ -1,0 +1,6 @@
+[book]
+authors = ["Paul FREAKN Baker"]
+language = "en"
+multilingual = false
+src = "src"
+title = "GCP ACE - Study Notes"
