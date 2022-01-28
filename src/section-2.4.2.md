@@ -1,11 +1,28 @@
-# Networks isolate systems
+# 3 VPC network types
 
-#### Project
+### Default
+* Every project
+* One subnet per region
+* Default firewall rules
 
-| Region | Network #1 | Network #2 | Network #3 | Network #... |
-| --- | --- | --- | --- | --- |
-| us-east1 | VM A | VM C | VM D |     |
-| europe-west1 | VM B |      |      |     |
+> Default is actuall an auto mode network with [default firewall rules](https://cloud.google.com/vpc/docs/firewalls#more_rules_default_vpc)
+> setup for ingressing ICMP, RDP, SSH and all protocols/ports for
+> traffic within the network
 
-* VM A and VM B can communicate over internal IPs even though they are in different regions.
-* VM C and VM D must communicate over external IPs even though they're in the same region.
+### Auto Mode
+* Default network
+* One subnet per region
+* Regional IP allocation
+* Fixed `/20` subnetwork per region
+* Expandable up to `/16`
+
+> All subnets fit within `10.128.0.0/9` CIDR
+
+### Custom Mode
+* No default subnets created
+* Full control of IP ranges
+* Regional IP allocation
+* Expandable to IP ranges you specify
+
+> You can convert an Automode network to a Custom mode network,
+> but this is a uni-directional conversion and cannot be undone
