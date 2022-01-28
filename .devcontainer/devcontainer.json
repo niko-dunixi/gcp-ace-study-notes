@@ -6,5 +6,11 @@
   // postStartCommand is not intended to block, vscode chokes if you do -> https://youtu.be/zFzPnWgBx_I
   // - nohup will allow the command to run in the background indefinitely while logging to mdbook.log
   // - the 'until' loop afterwards is just to remove the extra 'nohup.out' file created by nohup
-  "postStartCommand": "nohup bash -c 'make serve &> mdbook.log &' && until rm nohup.out; do sleep 1s; done"
+  "postStartCommand": "nohup bash -c 'make serve &> mdbook.log &' && until rm nohup.out; do sleep 1s; done",
+  "extensions": [
+    "bierner.markdown-mermaid",
+    "bpruitt-goddard.mermaid-markdown-syntax-highlighting",
+    "bungcip.better-toml",
+    "yzhang.markdown-all-in-one",
+  ]
 }
