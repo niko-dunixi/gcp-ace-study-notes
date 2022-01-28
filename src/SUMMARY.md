@@ -14,6 +14,10 @@
 - [Compute Resources](section-2.2.md)
 - [Data Storage Options](section-2.3.md)
 - [Network Resources](section-2.4.md)
+    - [Projects and Networks](section-2.4.0.md)
+    - [3 VPC network types](section-2.4.1.md)
+    - [Networks isolate systems](section-2.4.2.md)
+    - [Google VPC is global](section-2.4.3.md)
 
 # Deploying and implementing a cloud solution
 
