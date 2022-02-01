@@ -20,6 +20,12 @@
     - [Google VPC is global](section-2.4.4.md)
     - [Subnetworks cross zones](section-2.4.5.md)
     - [Expand subnets without re-creating instances](section-2.4.6.md)
+    - [VMs can have internal and external IPs](section-2.4.7.md)
+    - [DNS Resolution for internal addresses](section-2.4.8.md)
+    - [DNS Resolution for external addresses](section-2.4.9.md)
+    - [Cloud DNS](section-2.4.10.md)
+    - [Alias IP Ranges](section-2.4.11.md)
+    - [Routes and Firewalls](section-2.4.12.md)
 
 # Deploying and implementing a cloud solution
 
